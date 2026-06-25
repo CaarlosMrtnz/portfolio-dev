@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Carlos Martínez Agustín, Desarrollador de Software enfocado en automatización, datos y web scraping.">
+    <meta name="author" content="Carlos Martínez Agustín">
+    <meta name="keywords" content="Software Developer, Python, Selenium, Linux, Java, AWS, Web Scraping, Portfolio">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Carlos Martínez Agustín | Software Developer">
+    <meta property="og:description"
+        content="Portfolio de Carlos Martínez Agustín, Desarrollador de Software enfocado en automatización, datos y web scraping.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dominio.com">
+    <meta property="og:image" content="https://dominio.com/assets/img/og-preview.jpg">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Carlos Martínez Agustín | Software Developer">
+    <meta name="twitter:description"
+        content="Portfolio de Carlos Martínez Agustín, Desarrollador de Software enfocado en automatización, datos y web scraping.">
+    <meta name="twitter:image" content="https://dominio.com/assets/img/og-preview.jpg">
+
+    <title>Carlos Martínez Agustín | Software Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#hero" class="logo">Portfolio dev</a>
+            <nav>
+                <!-- Hack con checkbox oculto para manejar el estado del menú móvil sin JavaScript -->
+                <input type="checkbox" id="mobile-menu-toggle" hidden>
+                <label for="mobile-menu-toggle" class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#toolkit">Toolkit</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experiencia">Experience</a></li>
+                    <li><a href="#contacto">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hello! I'm
+                        <br><span class="accent-text">Carlos Martínez</span>
+                    </h1>
+                    <h2>Software Developer
+                        <br>& Cybersecurity Student
+                    </h2>
+                    <div class="hero-actions">
+                        <a href="#contacto" class="btn-primary">Contactar</a>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/carlos-mart%C3%ADnez-agust%C3%ADn/" target="_blank"
+                                aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/CaarlosMrtnz" target="_blank" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="abstract-shape"></div>
+                        <img src="/assets/img/carlos-martinez.png" alt="Carlos Martínez Agustín Profile"
+                            fetchpriority="high">
+                        <span class="badge-float badge-top"><i class="fas fa-shield-alt"></i> Cloud Security</span>
+                        <span class="badge-float badge-left"><i class="fab fa-python"></i> Python & Backend</span>
+                        <span class="badge-float badge-right"><i class="fab fa-docker"></i> Docker & AWS</span>
+                        <span class="badge-float badge-bottom"><i class="fas fa-circle status-dot"></i> Open to
+                            Work</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">01 // ABOUT</span>
+                    <h2 class="section-title">Cambié los motores<br> por el software.</h2>
+                </div>
+
+                <div class="about-intro">
+                    <p>Antes de escribir código, resolvía problemas trabajando con sistemas electromecánicos y
+                        herramientas de diagnóstico. Eso me enseñó algo que sigue definiendo mi forma de desarrollar:
+                        <br><span class="personal-brand">'Las mejores soluciones nacen de entender el problema en
+                            profundidad'.</span>
+                        <br>Hoy combino esa experiencia técnica con el desarrollo de software y la ciberseguridad
+                        para crear aplicaciones seguras, fiables y pensadas para funcionar en el mundo real.
+                        <br>Busco mi primera oportunidad como desarrollador junior para seguir construyendo, aprendiendo
+                        y aportando valor desde el primer commit.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Toolkit -->
+        <section id="toolkit" class="toolkit-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02 // TOOLKIT</span>
+                    <h2 class="section-title">El stack<br>detrás del código.</h2>
+                </div>
+
+                <p class="toolkit-intro">Las tecnologías con las que convierto problemas reales en soluciones de
+                    software funcionales, apoyándome en el análisis de datos y las buenas prácticas de seguridad.</p>
+
+                <div class="toolkit-grid">
+                    <article class="card toolkit-card">
+                        <div class="card-content">
+                            <h3>Lenguajes</h3>
+                            <div class="tech-badges-container">
+                                <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                                <span class="tech-badge"><i class="fas fa-database"></i> SQL</span>
+                                <span class="tech-badge"><i class="fab fa-java"></i> Java</span>
+                                <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+                                <span class="tech-badge"><i class="fas fa-code"></i> C#</span>
+                                <span class="tech-badge"><i class="fas fa-terminal"></i> Dart</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card toolkit-card">
+                        <div class="card-content">
+                            <h3>Desarrollo Web & Frontend</h3>
+                            <div class="tech-badges-container">
+                                <span class="tech-badge"><i class="fab fa-html5"></i> HTML</span>
+                                <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS</span>
+                                <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+                                <span class="tech-badge"><i class="fab fa-node-js"></i> Node.js</span>
+                                <span class="tech-badge"><i class="fas fa-mobile-alt"></i> Flutter</span>
+                                <span class="tech-badge"><i class="fab fa-figma"></i> Figma</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card toolkit-card">
+                        <div class="card-content">
+                            <h3>Datos & Backend</h3>
+                            <div class="tech-badges-container">
+                                <span class="tech-badge"><i class="fas fa-table"></i> Pandas</span>
+                                <span class="tech-badge"><i class="fas fa-database"></i> PostgreSQL</span>
+                                <span class="tech-badge"><i class="fas fa-server"></i> Supabase</span>
+                                <span class="tech-badge"><i class="fas fa-leaf"></i> MongoDB</span>
+                                <span class="tech-badge"><i class="fas fa-server"></i> SQL Server Management</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card toolkit-card">
+                        <div class="card-content">
+                            <h3>Ciberseguridad & DevOps</h3>
+                            <div class="tech-badges-container">
+                                <span class="tech-badge"><i class="fab fa-linux"></i> Linux</span>
+                                <span class="tech-badge"><i class="fab fa-docker"></i> Docker</span>
+                                <span class="tech-badge"><i class="fab fa-git-alt"></i> Git</span>
+                                <span class="tech-badge"><i class="fab fa-github"></i> GitHub</span>
+                                <span class="tech-badge"><i class="fab fa-aws"></i> AWS</span>
+                                <span class="tech-badge"><i class="fas fa-shield-alt"></i> DevSecOps</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03 // PROJECTS</span>
+                    <h2 class="section-title">Pero... ¿Dónde<br>están las pruebas?</h2>
+                </div>
+
+                <p class="projects-intro">La mejor forma de conocer a un desarrollador es ver lo que ha construido.
+                    <br>Proyectos donde transformo conocimientos en soluciones funcionales.
+                </p>
+
+                <div class="projects-grid">
+                    <article class="card project-card">
+                        <div class="project-image-wrapper phone-mockup">
+                            <img src="/assets/img/homeflow.png" alt="HomeFlow Project" loading="lazy">
+                        </div>
+                        <div class="card-content project-info">
+                            <h3>HomeFlow</h3>
+                            <p class="project-tech">Flutter (BLoC), Python, Supabase, PostgreSQL, WebSockets</p>
+                            <p class="project-desc">Desarrollo de la lógica backend (Python, Triggers SQL) de una app
+                                multiplataforma para el procesamiento en tiempo real de alertas de consumo y control de
+                                suministros.</p>
+                            <a href="https://github.com/CaarlosMrtnz/HomeFlow.git" class="btn btn-outline"
+                                target="_blank">Ver código en GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="project-image-wrapper browser-mockup">
+                            <img src="/assets/img/despliegue-cloud.png" alt="Despliegue Cloud Project"
+                                class="img-dark-fix" loading="lazy">
+                        </div>
+                        <div class="card-content project-info">
+                            <h3>Despliegue Cloud</h3>
+                            <p class="project-tech">AWS (Elastic Beanstalk), Docker, Node.js, Cloud Security</p>
+                            <p class="project-desc">Finalización de laboratorios de AWS Academy, gestionando identidades
+                                (IAM), escalando aplicaciones y monitorizando recursos. Despliegue de aplicación en
+                                servidores Linux contenedorizados con Docker y lanzamiento con AWS Elastic Beanstalk.
+                            </p>
+                            <a href="https://www.linkedin.com/posts/carlos-mart%C3%ADnez-agust%C3%ADn_aws-docker-cloudcomputing-ugcPost-7425246075889807360-YOYL/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFNTwcoB3IfWzZTxxa8781dcbL7ha_-aMKo"
+                                class="btn btn-outline" target="_blank">Ver detalles en Linkedin</a>
+                        </div>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="project-image-wrapper browser-mockup">
+                            <img src="/assets/img/lampreas-erp.png" alt="Lampreas Violeta ERP y Simulador"
+                                loading="lazy">
+                        </div>
+                        <div class="card-content project-info">
+                            <h3>Lampreas Violeta ERP y Simulador</h3>
+                            <p class="project-tech">Java, Java FX, PostgreSQL, JDBC, CSS, Jackson</p>
+                            <p class="project-desc">Aplicaciones en Java enfocadas en la gestión empresarial ERP y la
+                                simulación de procesos concurrentes e industriales. Modelado de datos relacionales SQL,
+                                arquitectura POO limpia y control de hilos para la sincronización lógica.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/CaarlosMrtnz/lampreas-violeta-erp.git"
+                                    class="btn btn-outline btn-sm" target="_blank">Código del ERP en Github</a>
+                                <a href="https://github.com/CaarlosMrtnz/copy-center-threads-simulator.git"
+                                    class="btn btn-outline btn-sm" target="_blank">Código del Simulador en Github</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="project-image-wrapper phone-mockup">
+                            <img src="/assets/img/sensor-app.png" alt="Monitor de actividad física y sensores"
+                                loading="lazy">
+                        </div>
+                        <div class="card-content project-info">
+                            <h3>Monitor de actividad física y sensores</h3>
+                            <p class="project-tech">Kotlin, Android, Acelerómetro</p>
+                            <p class="project-desc">Aplicación Android desarrollada en Kotlin que permite el registro de
+                                sesiones deportivas y la monitorización de intensidad en tiempo real utilizando el
+                                acelerómetro del dispositivo.</p>
+                            <a href="https://github.com/CaarlosMrtnz/android-sensor-activity-tracker.git"
+                                class="btn btn-outline" target="_blank">Ver código en GitHub</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">04 // EDUCATION</span>
+                    <h2 class="section-title">El código evoluciona.<br>Yo también.</h2>
+                </div>
+
+                <p class="projects-intro">Todo aprendizaje deja huella.
+                    <br>Esta es la formación que ha contribuido a construir los conocimientos y habilidades que aplico
+                    hoy.
+                </p>
+
+                <div class="timeline-container">
+
+                    <article class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-text">
+                                <time datetime="2026">2026</time>
+                                <h3>Information Technology Fundamentals</h3>
+                                <p class="institution">IBM SkillsBuild · Online</p>
+                            </div>
+                            <div class="credential-wrapper">
+                                <a href="https://www.credly.com/badges/c5f438cd-2135-48e9-beba-ae8f82a2306b/public_url"
+                                    target="_blank" rel="noopener noreferrer" class="cert-thumbnail cert-landscape"
+                                    aria-label="Validar certificación oficial Information Technology Fundamentals">
+                                    <img src="assets/img/information-technology-fundamentals-credential.jpg"
+                                        alt="Insignia del certificado Information Technology Fundamentals"
+                                        loading="lazy">
+                                </a>
+                                <span class="form-disclaimer">* Pincha en la imagen para ver la credencial.</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-text">
+                                <time datetime="2026">2026</time>
+                                <h3>Máster en Ciberseguridad</h3>
+                                <p class="institution">Prometeo by The Power · Madrid, Spain</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-text">
+                                <time datetime="2026">2026</time>
+                                <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+                                <p class="institution">Prometeo by The Power · Madrid, Spain</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-text">
+                                <time datetime="2025">2025</time>
+                                <h3>Desarrollo con IA</h3>
+                                <p class="institution">BIG School · Online</p>
+                            </div>
+
+                            <div class="credential-wrapper">
+
+                                <div class="cert-thumbnail cert-landscape"
+                                    aria-label="Validar certificación de Desarrollo con IA">
+                                    <img src="assets/img/desarrollo-con-ia-certificado.jpg"
+                                        alt="Insignia del certificado Desarrollo con IA" loading="lazy">
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-text">
+                                <time datetime="2020">2020</time>
+                                <h3>Técnico Superior en Automoción</h3>
+                                <p class="institution">IES Aguas Vivas · Guadalajara, Spain</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experiencia" class="experiencia">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">05 // EXPERIENCE</span>
+                    <h2 class="section-title">De la teoría a<br>la práctica.</h2>
+                </div>
+
+                <p class="experience-intro">Mi primera experiencia profesional en desarrollo de software.
+                    <br>Un recorrido por las prácticas donde he participado en la creación y mejora de herramientas y
+                    aplicaciones orientadas a resolver necesidades reales.
+                </p>
+
+                <div class="experience-grid">
+                    <article class="card experience-card">
+                        <div class="company-banner">
+                            <img src="/assets/img/mercanza-logo.png" alt="Logo de Mercanza" loading="lazy">
+                        </div>
+                        <div class="company-meta">
+                            <span>Software Developer Intern</span>
+                        </div>
+
+                        <div class="card-content">
+                            <div class="experience-project">
+                                <h3>Motor de Web Scraping</h3>
+                                <p class="project-desc">Arquitectura de extracción automatizada. Diseñé y desarrollé un
+                                    servicio en Python para capturar, limpiar y estructurar información web, eliminando
+                                    cuellos de botella manuales para el equipo de análisis de datos.</p>
+                                <div class="experience-badges">
+                                    <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                                    <span class="tech-badge"><i class="fas fa-table"></i> Pandas</span>
+                                    <span class="tech-badge"><i class="fas fa-robot"></i> Selenium</span>
+                                </div>
+                            </div>
+
+                            <hr class="experience-divider">
+
+                            <div class="experience-project">
+                                <h3>Sistema de Gestión Hospitalaria</h3>
+                                <p class="project-desc">Desarrollo Full-Stack. Construcción de una plataforma para
+                                    optimizar el flujo de datos relacionados con hospitales y centros médicos,
+                                    conectando una interfaz reactiva con una arquitectura backend que permite el
+                                    correcto
+                                    manejo de la información hospitalaria.
+                                </p>
+                                <div class="experience-badges">
+                                    <span class="tech-badge"><i class="fas fa-code"></i> C#</span>
+                                    <span class="tech-badge"><i class="fas fa-network-wired"></i> .NET</span>
+                                    <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+                                    <span class="tech-badge"><i class="fas fa-database"></i> SQL Server</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">06 // CONTACT</span>
+                    <h2 class="section-title">¿Cuándo<br>empezamos?</h2>
+                </div>
+
+                <p class="contact-intro">Si buscas una persona con experiencia técnica, capacidad de aprendizaje y una
+                    mentalidad orientada a resolver problemas, estaré encantado de hablar contigo.</p>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" name="contacto_portfolio" method="POST" data-netlify="true"
+                        netlify-honeypot="bot-field" action="/#mensaje-exito">
+
+                        <!-- Filtro Honeypot nativo de Netlify para bloqueo silencioso de bots -->
+                        <div style="display: none;">
+                            <label>No rellenes esto si eres humano: <input name="bot-field" /></label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre"
+                                autocomplete="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com"
+                                autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required minlength="5" maxlength="1000"
+                                placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+
+                        <div class="submit-wrapper">
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                Enviar mensaje
+                            </button>
+                            <div id="mensaje-exito" class="form-success-msg">
+                                <i class="fas fa-check-circle"></i> Mensaje recibido. Te contestaré pronto.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <ul class="contact-links" role="list">
+                    <li>
+                        <a href="https://www.linkedin.com/in/carlos-mart%C3%ADnez-agust%C3%ADn/" target="_blank"
+                            rel="noopener noreferrer" class="contact-link">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i> Perfil de LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/CaarlosMrtnz" target="_blank" rel="noopener noreferrer"
+                            class="contact-link">
+                            <i class="fab fa-github" aria-hidden="true"></i> Perfil de GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Carlos Martínez Agustín. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/carlos-mart%C3%ADnez-agust%C3%ADn/" target="_blank"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/CaarlosMrtnz" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
