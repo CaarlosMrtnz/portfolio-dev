@@ -8,7 +8,7 @@ Al mismo tiempo, me ha permitido poner en práctica conceptos de HTML, CSS, dise
 
 🔗 **[Ver portfolio](https://carlos-martinez-dev.netlify.app/)**
 
-## 🏗️ Filosofía del proyecto
+## ⚖️ Filosofía del proyecto
 
 Este portfolio nace como parte de un proyecto del máster en ciberseguridad. Para desarrollarlo he utilizado únicamente HTML y CSS, sin frameworks ni plantillas externas. De esta forma refuerzo conocimientos básicos.
 
