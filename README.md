@@ -6,7 +6,7 @@ Bienvenido a mi repositorio de portfolio personal. He desarrollado este proyecto
 
 Al mismo tiempo, me ha permitido poner en práctica conceptos de HTML, CSS, diseño web y accesibilidad, aplicando las buenas prácticas que he ido aprendiendo durante mi formación y experiencia en el ámbito tecnológico.
 
-🔗 **[Ver portfolio](https://dominio.netlify.app)**
+🔗 **[Ver portfolio](https://carlos-martinez-dev.netlify.app/)**
 
 ## 🏗️ Filosofía del proyecto
 
