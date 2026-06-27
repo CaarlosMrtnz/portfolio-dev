@@ -772,6 +772,19 @@ header {
     margin-top: 2rem;
 }
 
+.timeline-subtitle {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
+
+    padding-left: 2rem;
+}
+
 /* Trazo vertical: gradiente que refuerza la jerarquía */
 .timeline-container::before {
     content: '';
