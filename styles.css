@@ -969,7 +969,7 @@ header {
     background-color: rgba(0, 0, 0, 0.2);
     font-family: monospace;
     font-size: 1rem;
-    color: var(--accent-color);
+    color: var(--primary-accent);
 }
 
 .experience-project {
@@ -1289,7 +1289,7 @@ footer {
     }
 
     .hero-image {
-        max-width: 2350px;
+        max-width: 350px;
         margin: 0 auto 2rem auto;
     }
 
