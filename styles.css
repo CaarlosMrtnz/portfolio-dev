@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Tokens de diseño: Sistema de color, tipografía y variables estructurales */
+/* Sistema de color, tipografía y variables estructurales */
 :root {
     --bg-color: #0a0a0c;
     --bg-card: #121318;
@@ -40,7 +40,7 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     letter-spacing: 0.01em;
-    /* Previene scroll horizontal en resoluciones no estándar */
+    /* Previene scroll horizontal en resoluciones que no sean estándar */
     overflow-x: hidden;
 }
 
@@ -109,7 +109,7 @@ section {
     letter-spacing: -0.03em;
     color: var(--text-primary);
     display: block;
-    margin: 0.75rem 0 1.5rem 0;
+    margin: 1.5rem 0 1.5rem 0;
     padding-bottom: 0;
 }
 
@@ -118,6 +118,7 @@ section {
 .toolkit-section,
 .projects,
 .education,
+.experiencia,
 .contact {
     opacity: 0;
     animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -232,7 +233,7 @@ section {
     opacity: 0.05;
 }
 
-/* Párrafos descriptivos de sección con contraste reducido */
+/* Párrafos descriptivos de sección con un contraste algo reducido */
 .about-intro,
 .contact-intro,
 .toolkit-intro,
@@ -404,7 +405,7 @@ header {
     border: 1px solid var(--border-color);
 }
 
-/* Mismo patrón para mantener consistencia */
+/* Mismo patrón para mantener la consistencia */
 .social-links a:hover {
     color: #fff;
     background: var(--accent-gradient);
@@ -481,7 +482,6 @@ header {
     }
 }
 
-/* Contranimación para el retrato generando contraste */
 .image-wrapper img {
     width: 100%;
     height: auto;
@@ -543,7 +543,6 @@ header {
     -webkit-text-fill-color: initial;
 }
 
-/* Distribución espacial absoluta anclada al wrapper del retrato */
 .badge-top {
     top: -5%;
     left: 30%;
@@ -656,7 +655,6 @@ header {
     transform: scale(1.05);
 }
 
-/* Overlay de acento cromático */
 .project-image-wrapper::after {
     content: '';
     position: absolute;
@@ -681,7 +679,6 @@ header {
     transform: scale(1.05);
 }
 
-/* Mockup de ventana macOS */
 .browser-mockup,
 .phone-mockup {
     padding-top: 1.8rem;
@@ -714,7 +711,7 @@ header {
     border-bottom: none;
 }
 
-/* Flex-grow distribuye el espacio empujando las acciones de la tarjeta al fondo */
+/* Flex-grow para distribuir el espacio, empujando las acciones de la tarjeta al fondo */
 .card-content {
     padding: 1.5rem;
     display: flex;
@@ -742,12 +739,6 @@ header {
     letter-spacing: 0.1em;
 }
 
-.project-desc {
-    color: var(--text-secondary);
-    font-size: 1.05rem;
-    margin-bottom: 2rem;
-    flex-grow: 1;
-}
 
 .project-links {
     display: flex;
@@ -779,13 +770,11 @@ header {
     color: #ffffff;
     font-size: clamp(1.5rem, 3vw, 2rem);
 
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     margin-bottom: 2.5rem;
-
-    padding-left: 2rem;
 }
 
-/* Trazo vertical: gradiente que refuerza la jerarquía */
+/* Trazo vertical */
 .timeline-container::before {
     content: '';
     position: absolute;
@@ -845,7 +834,7 @@ header {
     z-index: 1;
 }
 
-/* Estado interactivo: Elevación de la tarjeta */
+/* Elevación de la tarjeta */
 .timeline-item:hover .timeline-content {
     border-color: rgba(139, 92, 246, 0.4);
     background-color: var(--bg-card-hover);
@@ -853,7 +842,7 @@ header {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Estado interactivo: Iluminación del nodo activo */
+/* Iluminación del nodo activo */
 .timeline-item:hover::before {
     background: var(--accent-gradient);
     border-color: var(--primary-accent);
@@ -945,39 +934,107 @@ header {
     flex-direction: column;
 }
 
-.company-banner {
-    width: 100%;
-    background-color: #ffffff;
+/* Encabezado horizontal de experiencia */
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.company-header-text {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+/* Etiqueta superior tipo sección */
+.company-tag {
+    font-family: monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: 0.4rem;
+}
+
+/* Puesto como elemento principal */
+.company-header-text h3 {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.3;
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.01em;
+}
+
+/* Nombre de empresa */
+.company-name {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+/* Contenedor del logo */
+.company-logo {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.company-banner img {
+.company-logo img {
     width: 100%;
-    height: auto;
-    max-height: 120px;
+    height: 100%;
     object-fit: contain;
-    display: block;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
 }
 
-.company-meta {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 1.5rem;
-    border-bottom: 1px solid var(--border-color);
-    background-color: rgba(0, 0, 0, 0.2);
-    font-family: monospace;
-    font-size: 1rem;
-    color: var(--primary-accent);
+/* Hover sobre la tarjeta que ilumina un poco el logo */
+.experience-card:hover .company-logo {
+    border-color: var(--primary-accent);
+    transform: scale(1.05);
 }
 
-.experience-project {
-    margin-bottom: 2rem;
+.experience-card:hover .company-logo img {
+    opacity: 1;
 }
 
-.experience-project:last-child {
+.experience-entry {
     margin-bottom: 0;
+}
+
+/* Estilos compartidos entre descripciones de Projects y Experience */
+.project-desc,
+.experience-desc {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+}
+
+/* Margen inferior mayor en Projects */
+.project-desc {
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+/* Margen inferior reducido en Experience */
+.experience-desc {
+    margin-bottom: 0.75rem;
 }
 
 .experience-badges {
@@ -991,7 +1048,7 @@ header {
 .experience-divider {
     border: none;
     border-top: 1px dashed var(--border-color);
-    margin: 2.5rem auto;
+    margin: 1.5rem auto;
     width: 60%;
     opacity: 0.5;
 }
@@ -1032,7 +1089,7 @@ header {
     transition: var(--transition-smooth);
 }
 
-/* Estado interactivo: Indicador de focus para inputs */
+/* Indicador de focus para inputs */
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
@@ -1088,52 +1145,6 @@ header {
     opacity: 0.7;
 }
 
-/* Feedback mediante :target */
-.form-success-msg {
-    display: none;
-    margin-top: 1rem;
-    width: 100%;
-    padding: 1rem;
-    box-sizing: border-box;
-    background-color: rgba(39, 201, 63, 0.05);
-    border: 1px solid #27C93F;
-    border-radius: var(--border-radius, 4px);
-    color: #27C93F;
-    font-family: monospace;
-    font-size: 0.9rem;
-}
-
-#mensaje-exito:target {
-    display: block;
-    animation: terminalFadeIn 0.3s ease forwards;
-}
-
-@keyframes terminalFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 0;
-    list-style: none;
-    margin: 3rem 0 0 0;
-}
-
-.contact-links li {
-    margin: 0;
-    flex: 1 1 250px;
-}
-
 .contact-link {
     display: flex;
     justify-content: center;
@@ -1174,7 +1185,7 @@ header {
 
 footer {
     background-color: var(--bg-card);
-    padding: 3rem 2rem;
+    padding: 1.75rem 2rem;
     border-top: 1px solid var(--border-color);
     margin-top: 4rem;
 }
@@ -1216,7 +1227,6 @@ footer {
 
 @media (max-width: 992px) {
 
-    /* Menú móvil controlado por checkbox hack */
     .hamburger-icon {
         display: flex;
         flex-direction: column;
@@ -1248,7 +1258,6 @@ footer {
         pointer-events: all;
     }
 
-    /* Transición de icono hamburguesa a cierre */
     #mobile-menu-toggle:checked~.hamburger-icon span:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
@@ -1261,7 +1270,7 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    /* Reestructuración del flujo principal para stack vertical en resoluciones medias */
+    /* Reestructuración del flujo principal en resoluciones medias */
     .hero .container {
         flex-direction: column-reverse;
         align-items: center;
@@ -1379,6 +1388,25 @@ footer {
     .credential-wrapper {
         align-items: flex-start;
         text-align: left;
+    }
+
+    /* Encabezado de experiencia: logo reducido en móvil */
+    .company-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .company-header {
+        gap: 1rem;
+        padding: 1rem 1.25rem;
+    }
+
+    .company-header-text h3 {
+        font-size: 1.15rem;
+    }
+
+    .company-tag {
+        font-size: 0.7rem;
     }
 }
 
